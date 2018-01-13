@@ -5,16 +5,48 @@
   --gray: #868e96;
   --gray-dark: #343a40;
 }
+@font-face {
+    font-family: 'raitons';
+    src: url('./fonts/raitons/raitons_demo-webfont.woff2') format('woff2'),
+         url('./fonts/raitons/raitons_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'alouette';
+    src: url('./fonts/alouette/alouette_personal_use-webfont.woff2') format('woff2'),
+         url('./fonts/alouette/alouette_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-html{
-  font-family: scheherazaderegular;
+}
+@font-face {
+    font-family: 'scheherazade';
+    src: url('./fonts/scheherazade/scheherazade-r-webfont.woff2') format('woff2'),
+         url('./fonts/scheherazade/scheherazade-r-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'partizano';
+    src: url('partizano-demo-ffp-webfont.woff2') format('woff2'),
+         url('partizano-demo-ffp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 body{
-    font-family: scheherazaderegular;
+  font-family: 'partizano';
     font-size: 16px;
     background: linear-gradient(to bottom right, rgba(96,96,96,0.3) 20%, rgba(224,224,224,0.5) 50%, rgba(96,96,96,0.1) 30% );
 }
+div, span, li, ul{
+  font-family: 'partizano';
+
+}
 h1, h2, h3, h4, h5, h6{
+  font-family: 'alouette';
   color: #343a40;
 }
 a {
@@ -24,44 +56,39 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 
-
 /*header*/
 .top-header{
   display:flex;
-  display:block;
   background-color: var(--trGreen);
-  max-height: 50px;
+  height: 50px;
   padding: 0;
 }
 header{
   text-align: center;
 }
-header > .logo{
-  text-align: center;
-}
 .rg-contact-us{
-  margin: 3px 0 2px 0px;
+  margin: 1.85% 0;
   padding: 0 5px;
   color:white;
   font-size: 14px;
   position: relative;
 }
 
+
+
 /*Social Icon*/
 .social-icon
 {
-  margin: 5px 0 2px 0px;
+  margin: 1.85% 0;
 }
 .top-header .social-icon span{
-  min-width: 23px;
-  max-height: 23px;
-  max-width: 23px;
-  min-height: 23px;
+  height:22px;
+  width:22px;
   background-color: White;
   border: 1px solid white;
   border-radius: 50%;
   text-align: center;
-  -moz-transition: all 1s ease;
+  -moz-transition: all 2s ease;
 }
 
 .top-header .social-icon span:hover{
@@ -132,84 +159,35 @@ header > .logo{
     background-color: #0077b5;
     border: 1px solid #0077b5;
     box-shadow: -5px -2px 4px rgba(0,0,0,0.3);
-    perspective: 1000;
+    perspective: : 1000;
 }
 
-.step:hover i { opacity: .3; }
+.size{font-size: 18px;}
 
-.size-12 { font-size: 12px; }
-.size-14 { font-size: 14px; }
-.size-16 { font-size: 16px; }
-.size-18 { font-size: 18px; }
-.size-21 { font-size: 21px; }
-.size-24 { font-size: 24px; }
-.size-32 { font-size: 32px; }
-.size-48 { font-size: 48px; }
-.size-64 { font-size: 64px; }
-.size-96 { font-size: 96px; }
-
-
-/*card*/
-.rg-card
-{
-  display: flex;
-  height:250px;
-  width:250px;
-  margin: 2% 5%;
-  background-color: rgba(255,0,0,0.4);
-}
-.rg-card .front{
-  display: block;
-  overflow: hidden;
-  width:100%;
-  height: auto;
-}
-.rg-card .front .header{
-  display: flex;
-  position: relative;
-}
-.rg-card .front .body{
-  display: flex;
-  position: relative;
-}
-.rg-card .front .body{
-  display: flex;
-  position: relative;
-}
-.rg-card .front .body .team-member-image{
-  display: flex;
-  position: relative;
-  width: 70%;
-  height: 65%;
-  border-radius: 50%;
-  overflow: hidden;
-  top: 10%;
-  left:15%;
-  border: 3px solid white;
-}
-
-
-.bottom-footer .social-icon
-{
-  text-align: right;
-}
-.step {
-  display: inline-block;
-  line-height: 1;
-  position: relative;
-  width: 10%;
-}
-
-/*navigation*/
 .rg-navbar{
   display: flex;
-  padding:0;
-  margin:5% 5%;
+  padding:3%;
+  margin:0;
   position: relative;
-  width:100%;
+  width: 60%;
   height: 60px;
   z-index:900;
 }
+.rg-navbar-header
+{
+  width:100%;
+  height: 60px;
+  z-index:900;
+  display: none;
+  padding:0;
+  position: relative;
+}
+.rg-navbar-collapse{
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
 .rg-navbar ul, .rg-navbar ul li.rg-nav-item-group >ul{
   display: flex;
   position: relative;
@@ -220,7 +198,7 @@ header > .logo{
 .rg-navbar ul li.brand-space{
   height:150px;
   width: 150px;
-  background-color: var(--trGreen);
+  background: radial-gradient(closest-corner at 45% 45%,white 5%,var(--trGreen) 40%,var(--trDarkGreen) 90%);
   border-radius: 50%;
   position: relative;
   top: -75%;
@@ -300,6 +278,7 @@ header > .logo{
 
 
 
+
 @-webkit-keyframes logorotation /* Safari and Chrome */ {
   from {
     -webkit-transform: rotateY(0deg);
@@ -329,33 +308,351 @@ header > .logo{
   }
 }
 
+
+/*card*/
+/*general-card Element*/
+.rg-card{
+	transform-style:preserve-3d;
+	transition:all 4s ease;
+	position: relative;
+  display:block;
+	padding-bottom: calc(100% - 8px);
+	margin-bottom: 1.6em;
+	width: 250px;
+	height: 300px;
+	backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+  perspective: 200px;
+  -webkit-perspective:200px;
+}
+
+.rg-card:hover
+{
+	-webkit-transform: rotateY(900deg);
+	-moz-transform: rotateY(900deg);
+	-o-transform: rotateY(900deg);
+	transform: rotateY(900deg);
+}
+.front-face
+{
+  display: flex;
+  flex-direction: column;
+	position:absolute;
+	width:100%;
+	height:100%;
+	backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+	color:#333;
+	text-align:center;
+	background-color: rgba(192,192,192,0.8);
+	font-weight:bold;
+  background: linear-gradient(to bottom right, rgba(96,96,96,0.3) 20%, rgba(224,224,224,0.5) 50%, rgba(96,96,96,0.1) 30% );
+
+
+}
+.back-face
+{
+  display: flex;
+  flex-direction: column;
+	position:absolute;
+	width:100%;
+	height:100%;
+	backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	-webkit-box-shadow: -20px 27px 41px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: -20px 27px 41px -13px rgba(0,0,0,0.75);
+	box-shadow: -20px 27px 41px -13px rgba(0,0,0,0.75);
+  transform:rotateY(180deg);
+  background: linear-gradient(to bottom right, rgba(96,96,96,0.3) 20%, rgba(224,224,224,0.5) 50%, rgba(96,96,96,0.1) 30% );
+
+}
+.rg-card .card-header
+{
+  padding: 0;
+  margin: 0;
+  width:100%;
+  display: inline-flex;
+  height: 50px;
+  position: relative;
+  backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rg-card .card-body
+{
+  padding: 0;
+  margin: 0;
+  width:100%;
+  display: inline-flex;
+  height: 200px;
+  position: relative;
+  flex-direction: column;
+  backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rg-card .card-footer
+{
+  padding: 0;
+  margin: 0;
+  width:100%;
+  display: inline-flex;
+  height: 50px;
+  position: relative;
+  backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rg-card .card-body .body-content
+{
+  padding: 0 2%;
+  display:none;
+  width:100%;
+  height:180px;
+  font-size: 12px;
+  text-align: justify;
+  backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rg-card .member-info
+{
+  position: absolute;
+  display:none;
+  flex-direction: column;
+  width:100%;
+  height:50px;
+  font-size: 12px;
+  backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+  text-align: center;
+
+}
+
+.rg-card .member-info > .name
+{
+  font-family:"partizano";
+  font-size:14px;
+  font-weight:bold;
+  position:relative;
+  width:100%;
+  padding: 0;
+  margin: 0;
+}
+.rg-card .member-info > .designation
+{
+  font-family:'partizano';
+   left:45%;
+   font-size:8px;
+   position:relative;
+   width:50%;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+
+}
+.rg-card .img-holder
+{
+  display: none;
+  border-radius:50%;
+  overflow:hidden;
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rg-card .img-holder>img{
+  height:100%;
+  width:100%;
+  backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+}
+/* front face*/
+.front-face >.card-body > .img-holder
+{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  overflow:hidden;
+  left:35px;
+  top: 10px;
+  display: block;
+}
+.front-face > .card-footer >.member-info
+{
+  display:inline-flex;
+}
+/*back face*/
+.back-face > .card-header >.img-holder
+{
+  display: block;
+  width:50px;
+  height:50px;
+  left:15px;
+  top: 23px;
+  z-index:110;
+  border:3px solid white;
+}
+.back-face > .card-body >.body-content
+{
+  display: inline-flex;
+  position: relative;
+  top: 20px;
+}
+.back-face > .card-header >.member-info
+{
+  display:inline-flex;
+  width: 180px;
+}
+
+/*navigation*/
+
 /*footer*/
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+footer p,
+footer div,
+footer span{
+  color: white;
+}
+.rg-footer{
+  background: linear-gradient(to top, rgba(1,1,1,0.9),rgba(1,1,1,0.7) );
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  max-height: 100%;
+  color: white;
+
+}
 .maps{
   position:relative;
-  z-index:2000;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  flex-direction: column;
 }
-#rg-map{
-  box-sizing: border-box;
-  height:360px;
-  max-height:380px;
-  position: relative;
+#rg-map
+{
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
+
 .bottom-footer{
-  background-color: var(--gray-dark)
+  background: linear-gradient(to top, rgba(0,0,0,0.9),rgba(0,0,0,0.8) );
 
 }
+.bottom-footer .social-icon a span
+{
+  text-align: center;
+}
+.bottom-footer .social-icon a span >i
+{
+  color: mediumblue;
+}
+.bottom-footer .social-icon a span:hover
+{
+  background-color: rgba(0,0,0,0.3);
+  text-align: right;
+}
+.step {
+  padding: 0;
+  display: inline-flex;
+  position: relative;
+  line-height: normal;
+  left: 2px;
+  width:10%;
+  
+}
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.99px) { ... }
+footer .rg-contact-us >h3{
+  margin: 1.85% 0;
+  padding: 0 5px;
+  color:white;
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.99px) { ... }
+  position: relative;
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.99px) { ... }
+}
+.rg-footer h3{
+    font-weight: 700;
+}
+.rg-footer .rg-contact-us ul{
+  list-style-type: none;
+}
+.rg-footer .rg-contact-us>p{
+  font-family: raitons;
+  font-weight: 900px;
+  font-size:32px;
+}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.99px) { ... }
+@media only screen and (max-width: 575.99px) {
+  body{font-size: 12px;}
+  .top-header{height:35px;}
+  .rg-contact-us{font-size: 12px; top:0; left:10px; margin: 6% 0px; padding: 0; }
+  .social-icon{margin:6% 0;}
+  .size-sm { font-size: 14px; }
+  .step {
+    line-height: 0;
+    width: 10%;
+  }
+  .logo{display:none;}
+  .rg-navbar-header{
+    display: flex;
+    position: fixed;
+    left: 10px;
+  }
+  .rg-navbar-header>.logo{
+    display: inline-flex;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    top: -20%;
+    left: -5%;
+}
+  .rg-navbar-collapse{
+    height: 100%;
+    width: 90%;
+}
+  
+  .top-header .social-icon span{
+    height: 17px;
+    width: 17px;
+  }
+  .rg-navbar-toggler{
+    float:left;
+    display:inline-block;
+    border-radius:20%;
+    background: linear-gradient(to top, var(--trDarkGreen), var(--trGreen));
+    color:white;
+    font-size:25px;
+    height: 50px;
+    width:50px;
+}
+}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+
+
+@media only screen and (min-width: 576px) and (max-width: 767.99px) {
+  .top-header{ height:30px;}
+  .size-md { font-size: 14px; }
+
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 991.99px) {
+  .size-lg { font-size: 16px; }
+
+
+
+ }
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199.99px) { .size-xl { font-size: 18px; } }
+
+@media only screen and (min-width: 1200px) {
+.size{font-size: 20px;}  }
