@@ -3,11 +3,12 @@ $(function(){
         $("div#collapsible-rg-navbar").toggle();     
     });
 
-});
+
     $(window).scroll(function () {
-    if( $(window).scrollTop() > $('.header').offset().top && !($('.header').hasClass('.header-fixed'))){
-      $('.header').addClass('.header-fixed');
+    if( $(window).scrollTop() > $('.rg-navbar-wrapper').offset().top && !($('.rg-navbar-wrapper').hasClass('header-fixed'))){
+      $('.rg-navbar-wrapper').addClass('header-fixed');
     } else if ($(window).scrollTop() == 0){
-      $('.header').removeClass('.header-fixed');
+      $('.rg-navbar-wrapper').removeClass('header-fixed');
     }
+});
 });

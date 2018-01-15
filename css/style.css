@@ -646,26 +646,36 @@ footer .rg-contact-us >h3{
   body{font-size: 12px;}
   .top-header{height:40px;}
   .top-header .rg-contact-us{font-size: 16px; top:0; left:10px; padding: 0; line-height: 2.5;}
-  .top-header .social-icon{position: relative;top: -100%}
-  .top-header .size-sm { font-size: 15px; padding: 0  }
+  .top-header .social-icon{position: relative;top: -100%;}
+  .top-header .size-sm { font-size: 15px; padding: 0;}
   .top-header .step {
     line-height: 0;
     background-color: white;
     width: 10%;
   }
   .logo{display:none;}
+  .rg-navbar-wrapper{
+    margin:0;
+    height: 90px;
+    width:100%;
+  left:-1px;
+    background-color:white;
+    box-shadow:0px 4px 2px rgba(0,0,0,0.2);
+    position: absolute;
+  }
   .rg-navbar-header{
     display: flex;
-    position: fixed;
+    position: relative;
     left: 10px;
+    flex-direction: row-reverse;
   }
   .rg-navbar-header>.logo{
     display: inline-flex;
+    position: fixed;
+    padding: 0;
     height: 70px;
     width: 100%;
-    position: relative;
-    top: -20%;
-    left: -5%;
+    position: fixed;
 }
   .rg-navbar-collapse{
     height: 100%;
@@ -676,8 +686,23 @@ footer .rg-contact-us >h3{
     height: 20px;
     width: 20px;
   }
+  .main-content
+  {
+    position: relative;
+    top:120px;
+  }
+  .header-fixed
+  {
+    position: fixed;
+    top:0;
+    left:0;
+    margin: 0;
+    margin-top:0;
+    height: 15%;
+    background-color:white;
+    box-shadow:0px 4px 2px rgba(0,0,0,0.2);
+}
   .rg-navbar-toggler{
-    float:left;
     display:inline-block;
     border-radius:20%;
     background: linear-gradient(to top, var(--trDarkGreen), var(--trGreen));
@@ -685,20 +710,26 @@ footer .rg-contact-us >h3{
     font-size:25px;
     height: 50px;
     width:50px;
+    position: relative;
+    top:20%;
+    left:-8%;
+    z-index: 1100;
   }
+
 
   #collapsible-rg-navbar{
     z-index: 900;
-    position: fixed;
+    position: absolute;
     top:123px;
     left:5%;
     display:none;
     height:200px;
-    width: 90%;
+    width: 100%;
       background: linear-gradient(to top, var(--trDarkGreen), var(--trGreen));
     overflow-y: scroll;
   }
-  #collapsible-rg-navbar::before{
+  /*
+  #collapsible-rg-navbar::after{
     content: "";
     display: block;
     width: 0;
@@ -707,10 +738,10 @@ footer .rg-contact-us >h3{
     border-right: 12px solid transparent;
     border-bottom: 20px solid var(--trDarkGreen);
     position: absolute;
-    top: -20px;
+    top: -12px;
     left: 8px;
-
   }
+  */
   .rg-navbar-wrapper ul, .rg-navbar-wrapper ul li.rg-nav-item-group >ul{
     display:flex;
     flex-direction: column;
@@ -754,13 +785,16 @@ footer .rg-contact-us >h3{
     .top-header{height:40px;}
   .top-header .rg-contact-us{font-size: 12px; top:0; left:10px; margin: 4% 0px; padding: 0; }
   .top-header .social-icon{margin:0;}
-  .top-header .size-sm { font-size: 14px; padding: 0  }
+  .top-header .size-sm { font-size: 14px; padding: 0;  }
   .top-header .step {
     line-height: 0;
     background-color: white;
-    width: %;
+    width: 10%;
   }
   .logo{display:none;}
+  .rg-navbar-wrapper{
+
+  }
   .rg-navbar-header{
     display: flex;
     position: fixed;
@@ -812,7 +846,7 @@ footer .rg-contact-us >h3{
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 20px solid var(--trDarkGreen);
+    border-bottom: 21px solid var(--trDarkGreen);
     position: absolute;
     top: -20px;
     left: 8px;
