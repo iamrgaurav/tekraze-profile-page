@@ -346,10 +346,10 @@ margin: 5% 0;
 
 .rg-card:hover
 {
-	-webkit-transform: rotateY(900deg);
-	-moz-transform: rotateY(900deg);
-	-o-transform: rotateY(900deg);
-	transform: rotateY(900deg);
+	-webkit-transform: rotateY(700deg);
+	-moz-transform: rotateY(700deg);
+	-o-transform: rotateY(700deg);
+	transform: rotateY(700deg);
 }
 .front-face
 {

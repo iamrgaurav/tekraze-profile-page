@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} ^iamrgaurav\.github\.io [NC]
+RewriteRule ^iamrgaurav\.io [R=301,L]
+</IfModule>
