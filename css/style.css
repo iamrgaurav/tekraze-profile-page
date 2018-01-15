@@ -29,21 +29,21 @@
 
 }
 @font-face {
-    font-family: 'willgrace';
-    src: url('./fonts/willg/willg___-webfont.woff2') format('woff2'),
-         url('./fonts/willg/willg___-webfont.woff') format('woff');
+    font-family: 'slabo';
+    src: url('./fonts/slabo/slabo27px-regular-webfont.woff2') format('woff2'),
+         url('./fonts/slabo/slabo27px-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 body{
-  font-family: 'willgrace';
+  font-family: 'slabo';
     font-size: 16px;
     background: linear-gradient(to bottom right, rgba(96,96,96,0.3) 20%, rgba(224,224,224,0.5) 50%, rgba(96,96,96,0.1) 30% );
   text-align: justify;
 }
 div, span, li, ul{
-  font-family: 'willgrace';
+  font-family: 'slabo';
 
 }
 h1, h2, h3, h4, h5, h6{
@@ -353,8 +353,11 @@ header{
 	position:absolute;
 	width:100%;
 	height:100%;
-	backface-visibility:hidden;
+	backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility : hidden;
 	color:#333;
 	text-align:center;
 	background-color: rgba(192,192,192,0.8);
@@ -370,8 +373,9 @@ header{
 	position:absolute;
 	width:100%;
 	height:100%;
-	backface-visibility:hidden;
+	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 	color:#fff;
 	text-align:center;
 	font-weight:bold;
@@ -390,6 +394,7 @@ header{
   display: inline-flex;
   height: 50px;
   position: relative;
+  backface-visibility: hidden;
 -webkit-backface-visibility: hidden;
 -moz-backface-visibility: hidden;
 -ms-backface-visibility: hidden;
@@ -405,6 +410,7 @@ header{
   height: 200px;
   position: relative;
   flex-direction: column;
+  backface-visibility: hidden;
 -webkit-backface-visibility: hidden;
 -moz-backface-visibility: hidden;
 -ms-backface-visibility: hidden;
@@ -418,6 +424,7 @@ header{
   display: inline-flex;
   height: 50px;
   position: relative;
+  backface-visibility: hidden;
 -webkit-backface-visibility: hidden;
 -moz-backface-visibility: hidden;
 -ms-backface-visibility: hidden;
@@ -431,6 +438,7 @@ header{
   height:180px;
   font-size: 12px;
   text-align: justify;
+  backface-visibility: hidden;
 -webkit-backface-visibility: hidden;
 -moz-backface-visibility: hidden;
 -ms-backface-visibility: hidden;
@@ -444,6 +452,7 @@ header{
   width:100%;
   height:50px;
   font-size: 12px;
+  backface-visibility: hidden;
 -webkit-backface-visibility: hidden;
 -moz-backface-visibility: hidden;
 -ms-backface-visibility: hidden;
@@ -454,17 +463,23 @@ header{
 
 .rg-card .member-info > .name
 {
-  font-family:"willgrace";
+  font-family:"slabo";
   font-size:14px;
   font-weight:bold;
   position:relative;
   width:100%;
   padding: 0;
   margin: 0;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-backface-visibility:hidden;
+  -o-backface-visibility:hidden;
+
 }
 .rg-card .member-info > .designation
 {
-  font-family:'willgrace';
+  font-family:'slabo';
    left:45%;
    font-size:8px;
    position:relative;
@@ -472,6 +487,11 @@ header{
    padding: 0;
    margin: 0;
    text-align: left;
+    backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-backface-visibility:hidden;
+  -o-backface-visibility:hidden;
 
 }
 .rg-card .img-holder
@@ -482,18 +502,15 @@ header{
   position:absolute;
   padding: 0;
   margin: 0;
--webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
--ms-backface-visibility: hidden;
--o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-backface-visibility:hidden;
+  -o-backface-visibility:hidden;
 }
 .rg-card .img-holder>img{
   height:100%;
   width:100%;
--webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
--ms-backface-visibility: hidden;
--o-backface-visibility: hidden;
 }
 /* front face*/
 .front-face >.card-body > .img-holder
@@ -628,7 +645,7 @@ footer .rg-contact-us >h3{
   .top-header .step {
     line-height: 0;
     background-color: white;
-    width: %;
+    width: 10%;
   }
   .logo{display:none;}
   .rg-navbar-header{
