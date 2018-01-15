@@ -235,7 +235,6 @@ margin: 5% 0;
 .rg-navbar-wrapper ul li a img.rg-brand-icon{
   height:100px;
   position: relative;
-  max-height:auto;
   left:-10%;
   top:15%;
 
@@ -269,7 +268,7 @@ margin: 5% 0;
   margin:2px auto;
   min-width: 200px;
   width:50%;
-  padding: 10% calc(100%-50px);
+  padding: 0;
   color: white;
   text-transform: uppercase;
   font-weight: bolder;
@@ -697,7 +696,10 @@ footer .rg-contact-us >h3{
     height: 20px;
     width: 20px;
   }
-
+   .header
+  {
+    background-color: white;
+  }
   .header-fixed
   {
     position: fixed;
@@ -706,7 +708,6 @@ footer .rg-contact-us >h3{
     margin: 0;
     margin-top:0;
     height: 90px;
-    background-color:white;
     box-shadow:0px 4px 2px rgba(0,0,0,0.2);
 }
   .rg-navbar-toggler{
@@ -781,50 +782,86 @@ footer .rg-contact-us >h3{
   height:50px;
   background: transparent;
   }
+  .rg-card{
+	padding-bottom: calc(100% - 8px);
+	margin-bottom: 1.6em;
+	width: 250px;
+	height: 300px;
+	backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    perspective: 200px;
+    -webkit-perspective:200px;
+}
 }
 
 
 
 @media only screen and (min-width: 576px) and (max-width: 767.99px) {
-  .top-header{ height:30px;}
-  .size-md { font-size: 14px; }
-    .top-header{height:40px;}
-  .top-header .rg-contact-us{font-size: 12px; top:0; left:10px; margin: 4% 0px; padding: 0; }
-  .top-header .social-icon{margin:0;}
-  .top-header .size-sm { font-size: 14px; padding: 0;  }
+   body{font-size: 16px;}
+  .top-header{height:40px;}
+  .top-header .rg-contact-us{font-size: 18px; top:0; left:10px; padding: 0; line-height: 2.2;}
+  .top-header .social-icon{position: relative; line-height: 2.4;}
+  .top-header .size-sm { font-size: 18px; padding: 0;}
   .top-header .step {
     line-height: 0;
-    background-color: white;
     width: 10%;
+  }
+
+  .main-content{
+    margin:10px 0 0 0;
   }
   .logo{display:none;}
   .rg-navbar-wrapper{
-
+    margin:0;
+    height: 90px;
+    width:100%;
+    background-color:white;
+    position: relative;
   }
   .rg-navbar-header{
     display: flex;
-    position: fixed;
-    left: 10px;
+    position: relative;
+    flex-direction: row-reverse;
+    text-align: center;
   }
   .rg-navbar-header>.logo{
     display: inline-flex;
-    height: 70px;
+    position: fixed;
+    padding: 0;
+    height: 80px;
     width: 100%;
+    margin:0 0;
+    text-align: center;
     position: relative;
-    top: -20%;
-    left: -5%;
+    left:23%
 }
+  .header
+  {
+    background-color: white;
+    box-shadow:0px 4px 2px rgba(0,0,0,0.2);
+  }
   .rg-navbar-collapse{
     height: 100%;
-    width: 90%;
+    width: 100%;
 }
 
   .top-header .social-icon span{
-    height: 17px;
-    width: 17px;
+    height: 20px;
+    width: 20px;
   }
+
+  .header-fixed
+  {
+    position: fixed;
+    top:0;
+    left:0;
+    margin: 0;
+    margin-top:0;
+    height: 90px;
+    box-shadow:0px 4px 2px rgba(0,0,0,0.2);
+}
   .rg-navbar-toggler{
-    float:left;
     display:inline-block;
     border-radius:20%;
     background: linear-gradient(to top, var(--trDarkGreen), var(--trGreen));
@@ -832,32 +869,24 @@ footer .rg-contact-us >h3{
     font-size:25px;
     height: 50px;
     width:50px;
+    position: relative;
+    top:20%;
+    z-index: 1100;
   }
 
+
   #collapsible-rg-navbar{
-    z-index:900;
-    position: fixed;
-    top:123px;
+    z-index: 900;
+    position: relative;
+    top:50px;
     left:5%;
     display:none;
     height:200px;
-    width: 90%;
+    width: 100%;
       background: linear-gradient(to top, var(--trDarkGreen), var(--trGreen));
     overflow-y: scroll;
   }
-  #collapsible-rg-navbar::before{
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 21px solid var(--trDarkGreen);
-    position: absolute;
-    top: -20px;
-    left: 8px;
 
-  }
   .rg-navbar-wrapper ul, .rg-navbar-wrapper ul li.rg-nav-item-group >ul{
     display:flex;
     flex-direction: column;
@@ -867,7 +896,7 @@ footer .rg-contact-us >h3{
   .rg-navbar-wrapper ul li.brand-space{
     display:none;
   }
-  .rg-navbar-wrapper .rg-nav-item
+  .rg-nav-item
   {
     flex-direction: column;
   }
@@ -891,18 +920,141 @@ footer .rg-contact-us >h3{
   height:50px;
   background: transparent;
   }
+  .rg-card{
+	padding-bottom: 50%;
+	width: 250px;
+	height: 300px;
+    margin: 2% 25%;
+  }
+  .rg-card .card-body .body-content, .rg-card .member-info > .designation{
+  font-size: 14px;}
+  .rg-card .member-info > .name{
+    font-size:17px;}
+  .rg-card .member-info > .designation{
+    font-size: 12px;
+  }
+  .top-header .social-icon span{
+  height:24px;
+  width:24px;
+}
 
- }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991.99px) {
-  .size-lg { font-size: 16px; }
+  .size-lg { font-size: 18px; }
+  .rg-navbar-wrapper{
+padding: 0;
+}
+.rg-navbar
+{
+  display: flex;
+  padding:0;
+  margin:6% 4%;
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+  .rg-navbar-wrapper ul li.rg-nav-item-group
+{
+
+  margin: 0;
+}
+
+.rg-navbar-wrapper ul, .rg-navbar-wrapper ul li.rg-nav-item-group >ul{
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+  .rg-navbar-wrapper ul li.rg-nav-item-group{
+  margin:0;}
+
+.rg-navbar-wrapper ul li.left{
+  padding:0;
+  margin: 0 2% 0 0;
+}
+.rg-navbar-wrapper ul li.right{
+  margin: 0 0 0 -1%;
+}
+
+.rg-navbar-wrapper ul li.rg-nav-item-group >ul > li.rg-nav-item{
+  min-width: 145px;
+  width:50%;}
+.rg-navbar-wrapper ul li.brand-space{
+  height:135px;
+  width: 135px;
+  left:-12px;
+}
+.rg-navbar-wrapper ul li a img.rg-brand-icon{
+  height:100px;
+  position: relative;
+  left:-10%;
+  top:15%;}
 
 
-
+.rg-navbar-wrapper ul li.rg-nav-item-group >ul > li.rg-nav-item>a{
+  line-height: 3.5em;
+  width:100%;
+  height:100%;
+}
+.top-header .rg-contact-us{font-size: 20px; top:0; left:10px; padding: 0; line-height: 2;}
+  .top-header .social-icon{position: relative; line-height: 2.5;}
+  .top-header .size-sm { font-size: 18px; padding: 0;}
  }
 
 
-@media only screen and (min-width: 992px) and (max-width: 1199.99px) { .size-xl { font-size: 18px; } }
+@media only screen and (min-width: 992px) and (max-width: 1199.99px) { .size-xl { font-size: 18px; }
+  .size-lg { font-size: 20px; }
+  .rg-navbar-wrapper{
+    padding: 0;
+}
+.rg-navbar
+{
+  display: flex;
+  padding:0;
+  margin:6% 4%;
+  }
+.rg-navbar-wrapper ul li a img.rg-brand-icon{
+  height:100px;
+  position: relative;
+  left:-10%;
+  top:15%;
 
-@media only screen and (min-width: 1200px) {
-.size{font-size: 20px;}  }
+}
+
+
+
+.rg-navbar-wrapper ul li.left{
+  display:flex;
+  flex-direction: row;
+  padding:0;
+  margin: 0 2.5% 0 0.5%;
+}
+.rg-navbar-wrapper ul li.right{
+  position: relative;
+  padding:0;
+  margin: 0 0 0 -1%;
+  display:flex;
+  flex-direction:row;
+  width:100%;
+}
+
+.rg-navbar-wrapper ul li.rg-nav-item-group >ul > li.rg-nav-item{
+  display:inline-flex;
+  margin:2px auto;
+  min-width: 195px;
+  width:50%;
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  background: linear-gradient(to top, var(--trDarkGreen), var(--trGreen));
+  text-align: center;
+
+}
+
+
+}
+
