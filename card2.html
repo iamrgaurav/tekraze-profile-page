@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang = "en">
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <meta name = "viewport" content = "width = device-width, initial-scale =1, shrink-to-fit=no">
+  <title>Tekraze|Profile</title>
+  <link rel = "stylesheet" type = "text/css" href="css/bootstrap.min.css"/>
+  <link rel = "stylesheet" type = "text/css" href="css/bootstrap-grid.min.css"/>
+  <link rel = "stylesheet" type = "text/css" href="/css/bootstrap-reebot.min.css"/>
+  <link href="ionicons/css/ionicons.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <style>
+  .rg-card
+{
+  -moz-transform-style:preserve-3d;
+  -webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	perspective: 1000;
+  display: block;
+  height:300px;
+  width:270px;
+  margin: 0% 5%;
+  background-color: rgba(255,0,0,0.4);
+  flex-direction: column;
+  border-radius: 10px;
+  -moz-transition: all 2s ease;
+
+}
+.rg-card:hover{
+  -moz-transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
+  -o-transform:rotateY(180deg);
+  transform:rotateY(180deg);
+}
+
+.rg-card .front{
+  display: flex;
+  overflow: hidden;
+  width:100%;
+  height: 100%;
+  flex-direction: column;
+  position: absolute;
+  -moz-backface-visibility: hidden;
+
+}
+.rg-card .header{
+  display: flex;
+  position: relative;
+  background-color: rgba(255,0,0,0.6);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+
+}
+.rg-card .front .header{
+  height: 12%;
+  flex-direction: row-reverse;
+  backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+}
+.rg-card .front .header span{
+  padding-top: 7%;
+  color: white;
+  backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+
+}
+
+.rg-card .front .body{
+  display: flex;
+  width: 100%;
+  height: 80%;
+  position: relative;
+  flex-direction: column;
+  margin: 0;
+  padding-top:5%;
+  backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+}
+.rg-card .team-member-image
+{
+  display: inline-flex;
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid white;
+  overflow: hidden;
+  backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+
+}
+.rg-card .front .body .team-member-image{
+
+  width: 70%;
+  height: 65%;
+  left: 15%;
+  backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.rg-card .member-short-info{
+  display:flex;
+  flex-direction: column;
+  backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.rg-card .front .body .member-short-info{
+  position: relative;
+  padding-top: 3%;
+
+}
+
+.rg-card .member-short-info .title{
+  display: inline-flex;
+  font-weight: bold;
+  font-family: Serif;
+  position: relative;
+  backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+}
+.rg-card .front .body .member-short-info .title{
+  font-size: 10;
+  left: 17%;
+}
+.rg-card .front .body .member-short-info .subtitle{
+  font-size: 6;
+  font-family: "Times New Roman";
+  text-decoration: small;
+  display: inline;
+  text-align: right;
+  padding-right: 14%;
+}
+
+.rg-card .back{
+  display: block;
+  width:100%;
+  height: 100%;
+  flex-direction: row;
+  -moz-tansition:rotateY(180deg);
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility: hidden;
+
+}
+.rg-card .back .back-header{
+  width: 100%;
+  height: 24%
+  backface-visibility:hidden;
+	-webkit-backface-visibility: hidden;
+}
+.rg-card .back .back-header .team-member-image{
+  width: 25%;
+  height: 90%;
+  margin:5% 2%;
+}
+.rg-card .back .back-header .member-short-info{
+  width:55%;
+  font-size: 7;
+}
+.rg-card .back .back-header .member-short-info .title{
+  font-size: 7;
+}
+.rg-card .back .back-header .menu{
+  padding-top: 20%;
+}
+.rg-card .back .back-header .menu span{
+  color:white;
+  border:3px solid white;
+  border-radius:50%;
+}
+.rg-card .back .back-header .menu span i{
+  padding: 5px;
+}
+  </style>
+
+    <div class = "Meet-the Team">
+      <div class = "row">
+        <div class = "col">
+          <div class = "rg-heading">
+            <h1>Meet The Team</h1>
+          </div>
+          <hr />
+          <div class = "row">
+          <div class = "col-lg-3 col-md-3 col-sm-12 col-xl-3">
+            <div class = "rg-card">
+              <div class = "front">
+                <div class = "header">
+                  <span class = "step size-24" id = "back">
+                    <i class = "ion-android-arrow-dropright-circle"></i>
+                  </span>
+                </div>
+                <div class = "body">
+                  <div class = "team-member-image">
+                    <img src = "./images/Meet-The-Team/Balvinder.png" alt = "Balwinder Singh" class = "">
+                  </div>
+                  <div class = "member-short-info">
+                    <div class = "title">
+                      Er. Balwinder Singh
+                    </div>
+                    <div class = "subtitle">
+                      Web App. Dev.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class = "back">
+                <div class = "back-header">
+                  <div class = "team-member-image">
+                    <img src = "./images/Meet-The-Team/Balvinder.png" alt = "Balwinder Singh">
+                  </div>
+                  <div class = "member-short-info">
+                    <div class = "title">Er. Balwinder Singh</div>
+                    <div class = "subtitle">Web App. Dev</div>
+                  </div>
+                  <div class = "menu">
+                    <span class = "size-24" id = "home">
+                      <i class = "ion-ios-home"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+              <!--  <p class = "h4 align-text-right">Balvinder Singh<br/><small class = "text-muted">Web Developer</small></p>
+              </div>
+              <div class = "card-body">
+                <p>
+
+                </p>
+              </div>
+              <div class = "card-footer">
+                Social icon
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-lg-3 col-md-3 col-sm-12  col-xl-3">
+            <div class = "rg-card">
+              <div class = "card-header">
+                <img src = "./images/Meet-The-Team/Pawan.png" alt = "Rahul Chanana" class = "img-fluid card-img-top">
+                Rahul Chanana
+              </div>
+              <div class = "card-body">
+                <p>
+                  An Undergraduate student of Information Technolgy, Guru Jambheshwar University of Science &amp; Technology of the batch 2015-2019. Have 3 year of Experience in HTML, CSS, WordPress, Mysql, PHP, C, C++ and have beginner experience of Java. Other than Programming Skills have three years experience of Graphic Designer with tools Photoshop and Photoscape. During the academic carrier being a part of web development team of training &amp; Placement Cell Developed https://www.tpc.gjuonline.ac.in.
+                </p>
+              </div>
+              <div class = "card-footer">
+              </div>
+            </div>
+          </div>
+          <div class = "col-lg-3 col-md-3 col-sm-3  col-xl-3">
+            <div class = "rg-card">
+              <div class = "card-header">
+                <img src = "./images/Meet-The-Team/Rahul.png" alt = "Gaurav" class = "img-fluid card-img-top">
+                Gaurav
+              </div>
+              <div class = "card-body">
+                <p>
+                  An Undergraduate student of Computer Science and Technology, Guru Jambheshwar University of Science &amp; Technology of the batch 2015-2019. After . Have 2 year of Experience in Python, HTML, CSS, WordPress, BootStrap, C, C++ and have beginner experience of Java, Javascript, jQuery. With lots of learning experience worked with web team of Training &amp; Placement Cell.
+                </p>
+              </div>
+              <div class = "card-footer">
+              </div>
+            </div>
+          </div>
+          <div class = "col-lg-3 col-md-3 col-sm-3  col-xl-3">
+            <div class = "rg-card">
+              <div class = "card-header">
+                <img src = "./images/Meet-The-Team/Gaurav.jpeg" alt = "Rahul Chanana" class = "img-fluid card-img-top">
+                Rahul Chanana
+              </div>
+              <div class = "card-body">
+                <p>
+                  An Undergraduate student of Computer Science and Technology, Guru Jambheshwar University of Science &amp; Technology of the batch 2015-2019. After . Have 2 year of Experience in Python, HTML, CSS, WordPress, BootStrap, C, C++ and have beginner experience of Java, Javascript, jQuery. With lots of learning experience worked with web team of Training &amp; Placement Cell.
+                </p>
+              </div>
+              <div class = "card-footer">
+              </div>
+            </div>
+          </div>
+-->
+</div>
+
+
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/popper.js"></script>
+    <script type="text/javascript" src="./js/tooltip.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.gmap.js"></script>
+
+</body>
+</html>

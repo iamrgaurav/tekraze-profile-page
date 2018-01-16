@@ -734,7 +734,7 @@ footer .rg-contact-us >h3{
     left:5%;
     display:none;
     height:200px;
-    width: 100%;
+    width: 80%;
       background: linear-gradient(to top, var(--trDarkGreen), var(--trGreen));
     overflow-y: scroll;
   }
@@ -778,6 +778,7 @@ footer .rg-contact-us >h3{
   .rg-navbar-wrapper ul li.rg-nav-item-group > ul > li.rg-nav-item > a{padding: 0;}
   .rg-navbar-wrapper ul li.rg-nav-item-group >ul > li.rg-nav-item{
   width:100%;
+  border-bottom:1px solid white;
   min-width: 200px;
   color: white;
   padding:0;

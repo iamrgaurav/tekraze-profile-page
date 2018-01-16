@@ -1,6 +1,0 @@
-<IfModule mod_rewrite.c>
-RewriteEngine On
-
-RewriteCond %{THE_REQUEST} ^iamrgaurav\.io
-RewriteRule ^iamrgaurav\.github\.io [L]
-</IfModule>
