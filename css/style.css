@@ -788,8 +788,14 @@ footer .rg-contact-us >h3{
   .rg-card{
 	padding-bottom: calc(100% - 8px);
 	margin: 2% auto;
-}
-
+  }
+  .rg-card .card-body .body-content{
+  font-size: 16px;
+  }
+    .rg-card .member-info > .name{
+  font-size:12px;}
+  .rg-card .member-info > .designation{
+  font-size:10px;}
 }
 
 
