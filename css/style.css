@@ -232,7 +232,7 @@ margin: 5% 0;
 
 
 }
-.rg-navbar-wrapper ul li a img.rg-brand-icon{
+.rg-navbar-wrapper ul li img.rg-brand-icon{
   height:100px;
   position: relative;
   left:-10%;
@@ -291,6 +291,9 @@ margin: 5% 0;
   line-height: 3.5em;
   width:100%;
   height:100%;
+  text-decoration:none;
+  color:white;
+
 }
 
 
@@ -346,10 +349,10 @@ margin: 5% 0;
 
 .rg-card:hover
 {
-	-webkit-transform: rotateY(700deg);
-	-moz-transform: rotateY(700deg);
-	-o-transform: rotateY(700deg);
-	transform: rotateY(700deg);
+	-webkit-transform: rotateY(540deg);
+	-moz-transform: rotateY(540deg);
+	-o-transform: rotateY(540deg);
+	transform: rotateY(540deg);
 }
 .front-face
 {
@@ -784,15 +787,9 @@ footer .rg-contact-us >h3{
   }
   .rg-card{
 	padding-bottom: calc(100% - 8px);
-	margin-bottom: 1.6em;
-	width: 250px;
-	height: 300px;
-	backface-visibility:hidden;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-    perspective: 200px;
-    -webkit-perspective:200px;
+	margin: 2% auto;
 }
+
 }
 
 
@@ -921,10 +918,10 @@ footer .rg-contact-us >h3{
   background: transparent;
   }
   .rg-card{
-	padding-bottom: 50%;
+	padding-bottom: 60%;
 	width: 250px;
 	height: 300px;
-    margin: 2% 25%;
+    margin: 2% auto;
   }
   .rg-card .card-body .body-content, .rg-card .member-info > .designation{
   font-size: 14px;}
@@ -987,7 +984,7 @@ padding: 0;
   width: 135px;
   left:-12px;
 }
-.rg-navbar-wrapper ul li a img.rg-brand-icon{
+.rg-navbar-wrapper ul li img.rg-brand-icon{
   height:100px;
   position: relative;
   left:-10%;
@@ -1016,7 +1013,7 @@ padding: 0;
   padding:0;
   margin:6% 4%;
   }
-.rg-navbar-wrapper ul li a img.rg-brand-icon{
+.rg-navbar-wrapper ul li img.rg-brand-icon{
   height:100px;
   position: relative;
   left:-10%;
