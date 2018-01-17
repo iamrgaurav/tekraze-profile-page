@@ -731,10 +731,10 @@ footer .rg-contact-us >h3{
     z-index: 900;
     position: relative;
     top:50px;
-    left:5%;
+    left:10%;
     display:none;
     height:200px;
-    width: 80%;
+    width: 90%;
       background: linear-gradient(to top, var(--trDarkGreen), var(--trGreen));
     overflow-y: scroll;
   }
@@ -883,10 +883,10 @@ footer .rg-contact-us >h3{
     z-index: 900;
     position: relative;
     top:50px;
-    left:5%;
+    left:10%;
     display:none;
     height:200px;
-    width: 100%;
+    width:90%;
       background: linear-gradient(to top, var(--trDarkGreen), var(--trGreen));
     overflow-y: scroll;
   }
@@ -918,6 +918,7 @@ footer .rg-contact-us >h3{
   .rg-navbar-wrapper ul li.rg-nav-item-group >ul > li.rg-nav-item{
   width:100%;
   min-width: 200px;
+  border-bottom:1px solid white;
   color: white;
   padding:0;
   margin:0;
